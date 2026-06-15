@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lavandería Fortaleza</title>
+
+<style>
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+body{
+    background:#f5f9ff;
+    color:#333;
+}
+
+header{
+    background:linear-gradient(135deg,#0057B8,#4FC3F7);
+    color:white;
+    padding:80px 10%;
+    text-align:center;
+}
+
+header h1{
+    font-size:3rem;
+    margin-bottom:15px;
+}
+
+header p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    display:inline-block;
+    padding:15px 30px;
+    background:white;
+    color:#0057B8;
+    text-decoration:none;
+    border-radius:50px;
+    font-weight:bold;
+    transition:.3s;
+}
+
+.btn:hover{
+    background:#003b73;
+    color:white;
+}
+
+section{
+    padding:70px 10%;
+}
+
+.titulo{
+    text-align:center;
+    margin-bottom:50px;
+    color:#0057B8;
+    font-size:2rem;
+}
+
+.sobre{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+    align-items:center;
+}
+
+.sobre img{
+    width:100%;
+    border-radius:15px;
+}
+
+.servicios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+    text-align:center;
+}
+
+.card h3{
+    color:#0057B8;
+    margin-bottom:15px;
+}
+
+.beneficios{
+    background:#eaf5ff;
+}
+
+.beneficios-grid{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.beneficio{
+    background:white;
+    padding:25px;
+    border-radius:12px;
+}
+
+.promocion{
+    background:#0057B8;
+    color:white;
+    text-align:center;
+    border-radius:20px;
+    padding:60px;
+}
+
+.promocion h2{
+    font-size:2.5rem;
+}
+
+.promocion span{
+    color:#FFD700;
+}
+
+.testimonios{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
+
+.testimonio{
+    background:white;
+    padding:25px;
+    border-radius:15px;
+    box-shadow:0 5px 15px rgba(0,0,0,.08);
+}
+
+.contacto{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:40px;
+}
+
+.contacto-info{
+    background:white;
+    padding:30px;
+    border-radius:15px;
+}
+
+iframe{
+    width:100%;
+    height:400px;
+    border:none;
+    border-radius:15px;
+}
+
+footer{
+    background:#003b73;
+    color:white;
+    text-align:center;
+    padding:25px;
+}
+
+@media(max-width:768px){
+    .sobre,
+    .contacto{
+        grid-template-columns:1fr;
+    }
+
+    header h1{
+        font-size:2.2rem;
+    }
+}
+</style>
+
+</head>
+<body>
+
+<header>
+    <h1>🧺 Lavandería Fortaleza</h1>
+    <p>Lavado profesional, rápido y confiable para toda tu ropa.</p>
+
+    <a href="https://wa.me/51999999999" class="btn">
+        Solicitar Cotización
+    </a>
+</header>
+
+<section>
+    <h2 class="titulo">¿Quiénes Somos?</h2>
+
+    <div class="sobre">
+        <div>
+            <h3>Tu mejor opción en Ate</h3>
+            <br>
+            <p>
+                En Lavandería Fortaleza ofrecemos servicios de lavado,
+                secado y cuidado profesional de prendas, frazadas y
+                edredones. Utilizamos maquinaria moderna para brindar
+                resultados impecables y ahorrar tiempo a nuestros clientes.
+            </p>
+        </div>
+
+        <img src="https://images.unsplash.com/photo-1626806787461-102c1bfaaea1"
+        alt="Lavandería">
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Nuestros Servicios</h2>
+
+    <div class="servicios">
+
+        <div class="card">
+            <h3>👕 Lavado de Ropa</h3>
+            <p>Limpieza profunda para todo tipo de prendas.</p>
+        </div>
+
+        <div class="card">
+            <h3>🛏️ Frazadas y Edredones</h3>
+            <p>Equipos especiales para prendas voluminosas.</p>
+        </div>
+
+        <div class="card">
+            <h3>🧥 Prendas Delicadas</h3>
+            <p>Tratamiento especial para telas sensibles.</p>
+        </div>
+
+        <div class="card">
+            <h3>🌬️ Secado Profesional</h3>
+            <p>Prendas listas para usar en menor tiempo.</p>
+        </div>
+
+    </div>
+</section>
+
+<section class="beneficios">
+    <h2 class="titulo">¿Por qué elegirnos?</h2>
+
+    <div class="beneficios-grid">
+
+        <div class="beneficio">
+            <h3>⚡ Rapidez</h3>
+            <p>Entregas puntuales y procesos eficientes.</p>
+        </div>
+
+        <div class="beneficio">
+            <h3>💙 Confianza</h3>
+            <p>Cuidamos cada prenda como si fuera nuestra.</p>
+        </div>
+
+        <div class="beneficio">
+            <h3>💲 Precios Accesibles</h3>
+            <p>Excelente calidad al mejor precio.</p>
+        </div>
+
+        <div class="beneficio">
+            <h3>🧼 Limpieza Garantizada</h3>
+            <p>Resultados impecables en cada servicio.</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <div class="promocion">
+        <h2>🎉 <span>15% DE DESCUENTO</span></h2>
+        <p>En tu primer servicio de lavandería.</p>
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Lo que dicen nuestros clientes</h2>
+
+    <div class="testimonios">
+
+        <div class="testimonio">
+            ⭐⭐⭐⭐⭐
+            <p>"Excelente atención y muy rápidos."</p>
+        </div>
+
+        <div class="testimonio">
+            ⭐⭐⭐⭐⭐
+            <p>"Mis frazadas quedaron impecables."</p>
+        </div>
+
+        <div class="testimonio">
+            ⭐⭐⭐⭐⭐
+            <p>"Precios cómodos y trato amable."</p>
+        </div>
+
+    </div>
+</section>
+
+<section>
+    <h2 class="titulo">Ubicación y Contacto</h2>
+
+    <div class="contacto">
+
+        <div class="contacto-info">
+
+            <h3>📍 Dirección</h3>
+            <p>Urbanización Fortaleza, Ate - Lima</p>
+
+            <br>
+
+            <h3>📱 WhatsApp</h3>
+            <p>+51 999 999 999</p>
+
+            <br>
+
+            <h3>🕒 Horario</h3>
+            <p>Lunes a Sábado</p>
+            <p>08:00 am - 08:00 pm</p>
+
+        </div>
+
+        <div>
+            <iframe
+            src="https://maps.google.com/maps?q=Ate%20Lima&t=&z=13&ie=UTF8&iwloc=&output=embed">
+            </iframe>
+        </div>
+
+    </div>
+</section>
+
+<footer>
+    <h3>Lavandería Fortaleza</h3>
+    <p>Rapidez • Limpieza • Confianza</p>
+</footer>
+
+</body>
+</html>
